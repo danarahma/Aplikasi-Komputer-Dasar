@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlueDrak">#1c26b4</color>
+    <color name="colorBlue">#094afd</color>
+    <color name="colorBluea">#da6b92fd</color>
+    <color name="colorRed">#dc3232</color>
+    <color name="colorRedDark">#ba1c14</color>
+    <color name="colorAbu">#9b9b9b</color>
+    <color name="colorAbuDark">#2ee2e2e2</color>
+    <color name="colorHeader">#ffffff</color>
+    <color name="colorsplash">#e2e2e2</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#10fd0c</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="colortrans">#00bababa</color>
+
+<color name="purple_500">#9C27B0</color>
+<color name="deep_purple_500">#673AB7</color>
+<color name="indigo_500">#3F51B5</color>
+<color name="blue_500">#2196F3</color>
+<color name="cyan_500">#00BCD4</color>
+<color name="light_blue_500">#03A9F4</color>
+    <color name="white">#fff</color>
+    <color name="blu">#2ae7e1</color>
+    <color name="blut">#522ae7e1</color>
+
+</resources>
