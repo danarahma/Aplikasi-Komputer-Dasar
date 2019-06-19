@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".Photoshop">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collappsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="Adobe Photoshop"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/phostoshopp"
+            app:contentScrim="@color/colorBlack"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAbuDark"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="Adobe Photoshop atau biasa disebut Photoshop diambil
+dari kata Photoshopping yang merupakan sebuah neologisme yang berarti “Menyunting
+ Sebuah Gambar”. Photoshop memiliki kemampuan untuk membaca dan menulis gambar
+  berformat raster seperti .png, .gif, .jpeg, jpg. dan lain-lain.\n
+  Perangkat buatan Adobe Systems dikhususkan untuk pengeditan foto atau gambar dan
+ pembuatan efek secara profesional baik meliputi modifikasi obyek yang sederhana
+ maupun yang sulit sekalipun. Photoshop merupakan salah satu software yang berguna
+ untuk mengolah gambar berbasis bitmap yang mempunyai tool dan efek yang lengkap
+  sehingga dapat menghasilkan gambar atau foto yang berkwalitas tinggi.\n
+ Perangkat lunak ini banyak digunakan oleh fotografer digital dan perusahaan
+ iklan sehingga dianggap sebagai pemimpin pasar (market leader) untuk perangkat
+  lunak pengolah gambar atau foto dan bersama Adobe Acrobat, dianggap sebagai produk
+   terbaik yang pernah diproduksi oleh Adobe Systems.\n
+  Kelengkapan fitur yang ada di dalam Photoshop ini dikemas dengan tampilan yang
+   nyaman dimata pengguna sehingga memudahkan orang dalam menggunakan adobe photoshop,
+    hal ini yang membuat software ini banyak digunakan oleh desainer grafis
+    profesional. Dan mungkin juga sampai saat ini masih belum ada software desain
+    grafis lain yang bisa menyamai kelengkapan fitur dari adobe photoshop ini.\n
+Meskipun pada awalnya Photoshop dirancang untuk menyunting gambar untuk cetakan
+berbasis kertas. Photoshop yang ada saat ini juga dapat digunakan untuk memproduksi
+ gambar untuk (World Wide Web). Beberapa versi terakhir juga menyertakan aplikasi
+ tambahan, (Adobe ImageReady), untuk keperluan tersebut. Photoshop juga memiliki
+ hubungan yang erat dengan beberapa perangkat lunak penyunting media, animasi dan
+  authoring buatan adobe lainnya.\n\n\n
+"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

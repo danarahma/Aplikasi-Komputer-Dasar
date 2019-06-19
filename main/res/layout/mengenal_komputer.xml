@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".MengenalKomputer">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="250dp"
+        android:background="@android:color/holo_blue_light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collappsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pc"
+            app:contentScrim="@color/colorBlack"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="Pengertian Komputer">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/mk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:text="A. Pengertian Komputer\n\nKata komputer berasal dari bahasa Latin, yaitu computare
+yang artinya menghitung. Dalam bahasa inggris disebut to compute.
+Secara definisi komputer dapat diterjemahkan sebagai sekumpulan perangkat elektronik
+ yang saling bekerja sama, dapat menerima data (input) dan memberikan informasi
+  (output) serta terkoordinasi di bawah kontrol yang tersimpan di memori.\n\n\n
+B. Elemen-Elemen Sistem Komputer\n\n
+Agar komputer dapat berfungsi sebagai pengolah data untuk menghasilkan suatu informasi,
+maka diperlukan sistem komputer yang tersusun atas tiga elemen yaitu hardware, software,
+dan brainware.\n\n
+Hardware tidak dapat berfungsi tanpa software dan juga sebaliknya. Dan keduanya tidak
+akan memberikan manfaat jika tidak ada unsur brainware. Hardware, merupakan perangkat
+fisik dari komputer yang dapat dilihat dan dirasakan, hardware terdiri dari:
+Input/Output device, seperti keyboard, mouse, printer,speaker, monitor, dan lainnya.\n\n
+Software, merupakan program-program komputer yang berguna untuk menjalankan suatu
+pekerjaan sesuai dengan yang dikehendaki. Jenis-jenis software :
+Sistem operasi, seperti DOS, UNIX, Windows, Linux, Novell, OS/2, Mac OS dll.
+Program aplikasi, seperti MS. Office, Adobe Photoshop, Corel Draw, Winamp, Adobe Reader dll.
+Bahasa pemrograman seperti PHP, HTML, C, BASIC, Delphi, Java dll.\n\n
+Brainware, merupakan pengguna komputer yang mengoperasikan komputer tersebut,
+seperti programmer, desaigner, editor dll.\n\n\n
+"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

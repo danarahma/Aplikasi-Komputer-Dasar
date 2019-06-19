@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blut">
+
+    <ImageView
+        android:id="@+id/pc"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pc"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <Button
+        android:onClick="mk"
+        android:id="@+id/cardview1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_effect"
+        android:text="Mengenal komputer"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+    <Button
+        android:onClick="hardware"
+        android:id="@+id/cardview2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_effect"
+        android:text="Hardware"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+    <Button
+        android:onClick="software"
+        android:id="@+id/cardview3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_effect"
+        android:text="Software"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+    <Button
+        android:onClick="quiz"
+        android:id="@+id/cardview4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_effect"
+        android:text="Quiz"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+    <Button
+        android:onClick="info"
+        android:id="@+id/cardview5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_effect"
+        android:text="info"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp" />
+    <Button
+        android:onClick="keluar"
+        android:id="@+id/cardview6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_effect"
+        android:text="Keluar"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

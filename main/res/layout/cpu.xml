@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".Cpu">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collappsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:title="CPU"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/cpui"
+            app:contentScrim="@color/colorBlack"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Theme.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAbuDark"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="Pengertian CPU atau Central Processing Unit adalah perangkat keras
+komputer yang memiliki tugas untuk menerima dan melaksanakan perintah dan data dari perangkat
+lunak. Karena merupakan pusat pengolahan data dalam sebuah komputer, CPU sering disebut juga
+sebagai processor. Cepat atau lambatnya kinerja dari sebuah computer cukup ditentukan oleh
+kualitas dan teknologi dari CPU yang digunakan.\n\n
+CPU memiliki berbagai macam komponen didalamnya, diantaranya sebagai berikut :\n
+1. Unit Kontrol\n
+Unit kontrol merupakan bagian dari prosesor yang mengatur jalannya program. Komponen ini
+terdapat dalam semua CPU. Salah satu tugas dari unit kontrol adalah mengambil intruksi-
+intruksi dari memori utama dan menentukan jenis instruksi tersebut. operasinya.
+Hasil dari pengolahan data dibawa oleh unit kendali ke memori utama lagi untuk disimpan,
+dan pada saatnya akan disajikan ke alat output. Dengan demikian unit kontrol dapat mengontrol
+ komputer sehingga terjadi sinkronisasi kerja antar komponen dalam menjalankan fungsi-fungsinya.\n\n
+2. Register\n
+Register merupakan alat penyimpanan berukuran relatif kecil namun memiliki kecepatan akses
+cukup tinggi dengan fungsi untuk menyimpan data atau instruksi yang sedang diproses.
+Memori ini bersifat sementara, biasanya di gunakan untuk menyimpan data saat sedang di
+olah ataupun data untuk pengolahan selanjutnya.\n\n
+3. Aritmathic Logic Unit\n
+Aritmathic Logic Unit atau dapat disingkat dengan ALU merupakan bagian dari CPU yang memiliki
+tugas untuk melakukan operasi aritmatika dan operasi logika berdasar instruksi yang ditentukan
+. ALU sering di sebut juga sebagai mesin bahasa karena ALU terdiri dari dua bagian, yaitu unit
+ aritmatika dan unit logika boolean yang masing-masing memiliki spesifikasi tugas tersendiri.
+ Tugas utama dari ALU adalah melakukan semua perhitungan aritmatika yang terjadi sesuai dengan
+ instruksi program. ALU melakukan semua operasi aritmatika dengan dasar penjumlahan sehingga
+ sirkuit elektronik yang digunakan disebut adder.\n\n
+
+Fungsi dari CPU\n
+Fungsi utama dari CPU adalah melakukan operasi aritmatika dan logika terhadap data yang diambil
+dari memori atau dari informasi yang diberikan melalui beberapa perangkat keras. CPU hampir
+ sama seperti kalkulator, hanya saja CPU jauh lebih kompleks dalam melakukan pemrosesan dari
+ intruksi-intruksi yang diberikan. Instruksi-instruksi tersebut kemudian disimpan terlebih
+ dahulu pada RAM, setiap instruksi akan diberi alamat unik yang disebut alamat memori.
+ Selanjutnya, CPU dapat mengakses data-data pada RAM dengan menentukan alamat data yang
+ dipilih.\n\n\n
+
+"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
